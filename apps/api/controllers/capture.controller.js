@@ -72,3 +72,24 @@ export const deleteCapture = async (req, res) => {
     return res.status(500).json({ success: false, message: "Delete failed" });
   }
 };
+export const getPublicCapture = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const capture = await Capture.findById(id);
+
+    if (!capture) {
+      return res.status(404).json({ message: "Capture not found or deleted" });
+    }
+
+    return res.status(200).json({
+      success: true,
+      capture: {
+        asciiArt: capture.asciiArt,
+        createdAt: capture.createdAt,
+        settings: capture.settings
+      }
+    });
+  } catch (error) {
+    return res.status(500).json({ message: "Server Error" });
+  }
+};

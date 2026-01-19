@@ -1,9 +1,13 @@
-import WebcamAscii from "./components/webcamAscii";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import WebcamAscii from "./components/WebcamAscii";
+import PublicViewer from "./components/PublicViewer"; // We will create this next
 
-function App() {
+export default function App() {
   return (
-    <WebcamAscii />
+    <Routes>
+      <Route path="/" element={<WebcamAscii />} />
+      <Route path="/view/:id" element={<PublicViewer />} />
+    </Routes>
   );
 }
-
-export default App;

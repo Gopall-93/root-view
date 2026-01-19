@@ -132,7 +132,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }) {
                 setLogs([]); 
                 setIsLogin(!isLogin);
             }}
-            className="text-[10px] text-matrix-green/60 hover:text-white hover:underline decoration-dashed uppercase tracking-wider disabled:opacity-30"
+            className="text-[12px] text-matrix-green/60 hover:text-white hover:underline decoration-dashed uppercase tracking-wider disabled:opacity-30"
           >
             [{isLogin ? "EXECUTE: NEW_USER_SETUP" : "RETURN: LOGIN_PROMPT"}]
           </button>
