@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import WebcamAscii from "./components/WebcamAscii";
+import WebcamAscii from "./components/MainTerminal";
 import PublicViewer from "./components/PublicViewer"; // We will create this next
 
 export default function App() {
