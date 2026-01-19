@@ -1,0 +1,12 @@
+{
+  "name": "root-cam-root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "front": "npm run dev --workspace=apps/web",
+    "back":"npm run dev --workspace=apps/api"
+  }
+}
