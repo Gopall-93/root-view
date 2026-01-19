@@ -14,8 +14,8 @@ const app = express();
 
 app.use(
   cors({
-    // ✅ FIX: Change this to 5173 (Vite's default port)
-    origin: "*", 
+    
+    origin: "https://root-view-web.vercel.app", 
     credentials: true,
   })
 );
