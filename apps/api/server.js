@@ -14,7 +14,6 @@ const app = express();
 
 app.use(
   cors({
-    
     origin: "https://root-view-web.vercel.app", 
     credentials: true,
   })
