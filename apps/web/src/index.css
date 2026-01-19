@@ -1,0 +1,40 @@
+/* 1. Font Import (MUST BE FIRST) */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+/* 2. Tailwind Import */
+@import "tailwindcss";
+
+/* 3. Theme Configuration */
+@theme {
+  --color-matrix-green: #00FF41;
+  --color-matrix-black: #0D0D0D;
+  --font-mono: "VT323", "Fira Code", monospace;
+  --animate-scanline: scanline 8s linear infinite;
+
+  @keyframes scanline {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+}
+
+/* 4. Body Styles */
+body {
+  background-color: var(--color-matrix-black);
+  color: var(--color-matrix-green);
+  font-family: var(--font-mono);
+  margin: 0;
+  overflow: hidden;
+}
+
+@layer utilities {
+  /* Hides scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+
+  /* Hides scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+}
