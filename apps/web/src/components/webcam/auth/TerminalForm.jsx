@@ -35,8 +35,8 @@ export default function TerminalForm({ formData, setFormData, onSubmit, isLoadin
       {/* Hidden Submit for Enter Key */}
       <button type="submit" className="hidden" />
       
-      <div className="pt-2 flex gap-2 text-matrix-green opacity-50 text-[10px]">
-        <span>[ STATUS: WAITING_FOR_INPUT ]</span>
+      <div className="pt-2 flex gap-2 text-matrix-green opacity-80 text-[12px]">
+        <span className="animate-pulse">[ STATUS: WAITING_FOR_INPUT ]</span>
         <span className="animate-pulse">_</span>
       </div>
     </form>
