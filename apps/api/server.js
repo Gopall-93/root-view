@@ -15,7 +15,7 @@ const app = express();
 app.use(
   cors({
     // ✅ FIX: Change this to 5173 (Vite's default port)
-    origin: "http://localhost:5173", 
+    origin: "*", 
     credentials: true,
   })
 );
