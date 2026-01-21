@@ -67,7 +67,7 @@ To run **Root View** locally on your machine, follow these steps.
 
 1.  **Clone the Repo**
     ```bash
-    git clone [https://github.com/Gopall-93/root-view.git](https://github.com/Gopall-93/root-view.git)
+    git clone [https://github.com/Gopall-93/root-view.git]
     cd root-view
     ```
 
@@ -114,3 +114,4 @@ To run **Root View** locally on your machine, follow these steps.
 <div align="center">
   <i>Made with 💚 and digital rain.</i>
 </div>
+
